@@ -4,6 +4,10 @@
 	<groupId>OpenGraph</groupId>
 	<artifactId>OpenGraph</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
 	<name>A Facebook OpenGraph implementation for Java</name>
 	<description>OpenGraph for Java</description>
 
@@ -34,6 +38,13 @@
 				<configuration>
 					<source />
 					<target />
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 		</plugins>
